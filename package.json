@@ -1,0 +1,11 @@
+{
+  "name": "faraid-ai-full-v1",
+  "private": true,
+  "scripts": {
+    "db:up": "docker compose up -d postgres",
+    "db:generate": "cd apps/api && npx prisma generate",
+    "db:migrate": "cd apps/api && npx prisma migrate dev",
+    "api": "cd apps/api && npm run start:dev",
+    "web": "cd apps/web && npm run dev"
+  }
+}
